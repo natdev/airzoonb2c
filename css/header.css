@@ -1,0 +1,110 @@
+header{
+  background: linear-gradient(rgba(230, 107, 99, 0.59),rgba(230, 107, 99, 0.59)),url(../images/bg-offre.png) no-repeat;
+  padding-bottom:30px;
+  background-size: cover;
+}
+
+
+
+ul {
+    list-style: none;
+    padding: 0px;
+    display:flex;
+}
+ul span{
+  flex-grow:1;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a{
+  color:#fff;
+}
+
+div.perfect-desc{
+    color: #fff;
+    padding-right: 30px;
+    padding-top: 64px;
+}
+
+div.perfect-desc h1{
+    font-weight: 300;
+    font-size: 3.5rem;
+}
+
+
+div.perfect-desc .btn{
+  background-color: #1daa9a;
+  border-color: #1daa9a;
+  width: 60%;
+}
+
+div.perfect-desc .btn-success:not(:disabled):not(.disabled):active{
+  background-color: #1a9284;
+  border-color: #1a9284;
+}
+
+div#offre{
+  perspective: 800px;
+}
+
+div#offre .container .row{
+  transform-style:preserve-3d;
+  justify-content: center;
+
+}
+
+div.card-offre{
+  background-color: #fff;
+}
+
+div.card-offre h4.title {
+    color: #fff;
+    background-color: #1daa9a;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 16px;
+    margin: 0px;
+}
+
+div.card-offre p.price {
+    font-size: 60px;
+    font-weight: 300;
+    color: #1daa9a;
+}
+
+div.card-offre h4 span{
+  font-weight:normal;
+  font-size: 16px;
+}
+
+div.card-offre .btn{
+  width: 90%;
+}
+
+div.card-offre p.description {
+    min-height: 72px;
+}
+
+div.desable-offre{
+    transform: translateZ(-4em);
+    padding: 0px;
+}
+
+
+div.enable-offre{
+    box-shadow: 4px 0px 14px rgba(105, 105, 105, 0.46);
+    padding: 0px 0px 15px 0px;
+}
+
+
+div.desable-offre .price {
+    padding-top: 75px;
+}
+
+
+div.enable-offre .price{
+  padding-top: 78px;
+}

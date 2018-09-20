@@ -6,3 +6,14 @@ Author URI: https://airzoon.com/
 Description: Ce site est destiner à promouvoir les offres et l'image de la société au près des prospects (B2C)
 Version: 1.0
 */
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
