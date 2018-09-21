@@ -1,0 +1,62 @@
+.arg-list {
+    padding: 90px 0px;
+}
+
+
+.arg-list h2{
+  font-size: 2.5rem;
+  color: #ce6f43;
+  font-weight: 300;
+}
+
+.arg-list ul {
+  list-style-image: url('../images/puce.png');
+}
+
+.arg-list ul li span {
+  font-weight: bold;
+  color:#454545;
+    position: relative;
+    bottom: 7px;
+}
+
+.arg-list ul li{
+  padding: 15px;
+}
+
+.link-blue{
+  color:#3ba092;
+}
+
+.newsletter{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color:#fff;
+  background: url(../images/bg-newsletter.png);
+  background-size:cover;
+}
+
+.newsletter-field , .newsletter-btn{
+  border: 0px;
+  height: 50px;
+  float: left;
+}
+
+form.newsletter-form {
+    position: relative;
+    top: 50px;
+}
+
+.newsletter-field{
+   width: 230px;
+   height: 50px;
+   border-radius: 5px 0px 0px 5px;
+}
+
+.newsletter-btn{
+   width: 120px;
+   background: red;
+   color:#fff;
+   border-radius: 0px 5px 5px 0px;
+
+}

@@ -4,7 +4,8 @@ function airzoon_files(){
   wp_enqueue_script('bootstrap_js',get_theme_file_uri('/js/bootstrap.bundle.min.js'),NULL, VERSION, true);
 
   wp_enqueue_style('normalize',get_stylesheet_uri().'/css/normalize.css');
-  wp_enqueue_style('bootstrap_airzoon',get_template_directory_uri().'/css/bootstrap.min.css',array('normalize'), VERSION);
+  wp_enqueue_style('fontawesome',get_template_directory_uri().'/css/fontawesome/css/all.min.css',array('normalize'), VERSION);
+  wp_enqueue_style('bootstrap_airzoon',get_template_directory_uri().'/css/bootstrap.min.css',array('normalize','fontawesome'), VERSION);
   wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i',NULL, VERSION);
   wp_enqueue_style('header_airzoon',get_template_directory_uri().'/css/header.css',array('normalize','bootstrap_airzoon'), VERSION);
   wp_enqueue_style('content_airzoon',get_template_directory_uri().'/css/content.css',array('normalize','bootstrap_airzoon','header_airzoon'),VERSION);

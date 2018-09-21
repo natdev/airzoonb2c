@@ -4,23 +4,33 @@ header{
   background-size: cover;
 }
 
+.menu-top {
+    display: flex;
+}
 
+span.logo{
+  flex-grow: 1;
+}
 
-ul {
+.social-menu ul {
     list-style: none;
     padding: 0px;
-    display:flex;
-}
-ul span{
-  flex-grow:1;
 }
 
-ul li{
+.social-menu ul li{
   display: inline-block;
 }
 
-ul li a{
+.social-menu ul li a{
   color:#fff;
+}
+
+.social-front{
+  margin: 0px 15px 0px 15px;
+}
+
+.phone-menu-front{
+    transform: rotate(100deg);
 }
 
 div.perfect-desc{
@@ -107,4 +117,18 @@ div.desable-offre .price {
 
 div.enable-offre .price{
   padding-top: 78px;
+}
+
+
+@media (max-width: 576px) {
+
+
+  .menu-top {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .social-front{
+    margin: 0px 12px 0px 12px;
+  }
 }
