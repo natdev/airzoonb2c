@@ -3,7 +3,7 @@
 }
 
 
-.arg-list h2{
+.section-title{
   font-size: 2.5rem;
   color: #ce6f43;
   font-weight: 300;
@@ -42,6 +42,10 @@
   float: left;
 }
 
+div#testimonialsControls p {
+    text-align: center;
+}
+
 form.newsletter-form {
     position: relative;
     top: 50px;
@@ -58,5 +62,40 @@ form.newsletter-form {
    background: red;
    color:#fff;
    border-radius: 0px 5px 5px 0px;
+
+}
+
+.image{
+  width:100%;
+  height:100px;
+  background-color: #000;
+}
+
+.partenaires, .pub, .testimonials {
+    padding: 76px 0px 76px 0px;
+}
+
+.pub{
+  text-align: center;
+  background-color: #4d4d4d;
+  color:#fff;
+}
+
+.pubDesc p{
+  font-size:1.5rem;
+  font-weight: 300;
+  padding: 0px 5px;
+}
+
+
+
+
+@media (max-width: 576px) {
+
+  .newsletter-field {
+      width: 208px;}
+
+      .section-title {
+          font-size: 2rem;}
 
 }

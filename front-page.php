@@ -95,7 +95,7 @@
         </div>
         <div class="col-lg-7">
           <div class="arg-list">
-            <h2>Pourquoi utiliser airZoon ?</h2>
+            <h2 class="section-title">Pourquoi utiliser airZoon ?</h2>
              <ul>
                <li><span>Un code premium pour se connecter 4x plus rapidement</span></li>
                <li><span>Un surf illimité sans aucune intérruption</span></li>
@@ -124,6 +124,91 @@
             <input class="newsletter-field" type="text" name="" value="">
             <input class="newsletter-btn" type="button" name="" value="S'inscrire">
           </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="testimonials">
+    <div class="container">
+        <h2 class="section-title text-center">Ils nous font confiance</h2>
+        <div id="testimonialsControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <p>"Wow! C'est kiffant de réviser ses épreuves d'examen connectée à la plage"</p>
+    </div>
+    <div class="carousel-item">
+      <p>"Wow! C'est kiffant de réviser ses épreuves d'examen connectée à la plage"</p>
+    </div>
+    <div class="carousel-item">
+      <p>"Wow! C'est kiffant de réviser ses épreuves d'examen connectée à la plage"</p>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#testimonialsControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#testimonialsControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+      </div>
+    </div>
+  </section>
+  <section class="partenaires">
+    <div class="container">
+        <h2 class="section-title text-center">Rejoins un hotspots partenaire</h2>
+        <?php echo do_shortcode("[smls id='24']"); ?>
+      <!--  <div class="row">
+          <div class="col-12">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-2"><img class="img-fluid" src="https://via.placeholder.com/150x150" alt=""></div>
+            <div class="col-2"><img class="img-fluid" src="https://via.placeholder.com/150x150" alt=""></div>
+            <div class="col-2"><img class="img-fluid" src="https://via.placeholder.com/150x150" alt=""></div>
+            <div class="col-2"><img class="img-fluid" src="https://via.placeholder.com/150x150" alt=""></div>
+            <div class="col-2"><img class="img-fluid" src="https://via.placeholder.com/150x150" alt=""></div>
+            <div class="col-2"><img class="img-fluid" src="https://via.placeholder.com/150x150" alt=""></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-2"><img class="img-fluid" src="https://via.placeholder.com/150x150" alt=""></div>
+            <div class="col-2"><img class="img-fluid" src="https://via.placeholder.com/150x150" alt=""></div>
+            <div class="col-2"><img class="img-fluid" src="https://via.placeholder.com/150x150" alt=""></div>
+            <div class="col-2"><img class="img-fluid" src="https://via.placeholder.com/150x150" alt=""></div>
+            <div class="col-2"><img class="img-fluid" src="https://via.placeholder.com/150x150" alt=""></div>
+            <div class="col-2"><img class="img-fluid" src="https://via.placeholder.com/150x150" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+          </div>
+
+        </div>-->
+    </div>
+  </section>
+  <section class="pub">
+    <div class="container">
+      <div class="row">
+        <div class="pubDesc">
+          <p>
+            Tu souhaites diffuse de la publicité à un tarif attractif auprès de
+            tous les utilisateurs dans les hotspots airZoon en Guadeloupe, en Guyane et en Martinique ?
+          </p>
+          <span class="btn btn-danger">
+            RECEVOIR PLUS D'INFORMATIONS
+          </span>
         </div>
       </div>
     </div>

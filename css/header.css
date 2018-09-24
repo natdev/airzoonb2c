@@ -122,6 +122,12 @@ div.enable-offre .price{
 
 @media (max-width: 576px) {
 
+  div.desable-offre {
+    transform:none;
+    padding: 0px 0px 15px 0px;
+    margin-top: 10px;
+}
+
 
   .menu-top {
     flex-direction: column-reverse;
