@@ -23,6 +23,15 @@ span.logo{
     font-weight: bold;
 }
 
+
+.face-color{
+  color:#0553a5;
+}
+
+.twit-color{
+  color:#43a2f4;
+}
+
 span.logo-footer img {
     width: 60%;
 }

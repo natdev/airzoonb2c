@@ -232,8 +232,8 @@
                 </li>
                 <li class="item-footer">
                   <span>
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook face-color"></i></a>
+                    <a href=""><i class="fab fa-twitter twit-color"></i></a>
                   </span>
                 </li>
               </ul>
