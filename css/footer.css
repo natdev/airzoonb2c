@@ -1,0 +1,31 @@
+.menu-footer {
+  display: flex;
+  width: 100%;
+}
+
+span.logo{
+  flex-grow: 1;
+}
+
+.menu-footerIN{width: 100%;}
+
+.menu-footerIN ul {
+    display: flex;
+    list-style: none;
+    width:100%;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+
+.menu-footerIN ul li a{
+  color:#4f4f4f;
+}
+
+span.logo-footer img {
+    width: 60%;
+}
+
+span.logo-footer {
+    text-align: center;
+}

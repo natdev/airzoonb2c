@@ -7,6 +7,8 @@ Description: Ce site est destiner à promouvoir les offres et l'image de la soci
 Version: 1.0
 */
 
+html, body {overflow-x: hidden;}
+
 html {
     font-family: sans-serif;
     line-height: 1.15;

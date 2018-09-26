@@ -6,6 +6,7 @@ header{
 
 .menu-top {
     display: flex;
+    width:100%;
 }
 
 span.logo{
@@ -92,7 +93,10 @@ div.card-offre h4 span{
 
 div.card-offre .btn{
   width: 90%;
+  color:#fff;
 }
+
+div.card-offre .btn:hover{color:#fff;}
 
 div.card-offre p.description {
     min-height: 72px;
@@ -128,10 +132,22 @@ div.enable-offre .price{
     margin-top: 10px;
 }
 
+div.card-offre p.description {
+    min-height: 72px;
+    padding: 0px 15px 0px 15px;
+}
+
+div.perfect-desc { text-align: center;}
+
+div.perfect-desc h1 {
+    font-size: 2.5rem;
+}
+
 
   .menu-top {
     flex-direction: column-reverse;
     align-items: center;
+    width: 100%;
   }
 
   .social-front{
