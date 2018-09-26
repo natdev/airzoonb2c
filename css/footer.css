@@ -18,8 +18,9 @@ span.logo{
 }
 
 
-.menu-footerIN ul li a{
-  color:#4f4f4f;
+.menu-footerIN ul li a {
+    color: #4f4f4f;
+    font-weight: bold;
 }
 
 span.logo-footer img {

@@ -22,7 +22,7 @@
                      <a href=""><i class="fab fa-facebook"></i></a>
                    </li>
                    <li class="social-front">
-                     <a href=""><i class="fab fa-twitter-square"></i></a>
+                     <a href=""><i class="fab fa-twitter"></i></a>
                    </li>
                    <li class="social-front">
                      <a href=""><i class="fab fa-instagram"></i></a>
@@ -200,7 +200,7 @@
     <div class="container">
       <div class="row">
         <div class=" sloganIN col-lg-12 col-md-12 col-sm-12 col-12"><p>airZoon est amoureusement conçu en Martinique</p></div>
-        <div class="anchor col-lg-12 col-md-12 col-sm-12 col-12"><a href="#">Back to the top</a></div>
+        <div class="anchor col-lg-12 col-md-12 col-sm-12 col-12"><a href="#offer">Back to the top</a></div>
       </div>
     </div>
   </section>
@@ -233,7 +233,7 @@
                 <li class="item-footer">
                   <span>
                     <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
                   </span>
                 </li>
               </ul>

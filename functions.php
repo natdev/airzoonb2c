@@ -5,6 +5,7 @@ function airzoon_files(){
   wp_enqueue_script('jQuery_3.3.1','//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js',NULL, VERSION, true);
 
   wp_enqueue_script('slick_js',get_theme_file_uri('/js/slick.min.js'),array('jQuery_3.3.1'), VERSION, true);
+  wp_enqueue_script('scrollTop_js',get_theme_file_uri('/js/scrollTop.js'),array('jQuery_3.3.1'), VERSION, true);
 
   wp_enqueue_script('bootstrap_js',get_theme_file_uri('/js/bootstrap.bundle.min.js'),array('jQuery_3.3.1','slick_js'), VERSION, true);
   wp_enqueue_script('carousel',get_theme_file_uri('/js/carousel.js'),array('jQuery_3.3.1','slick_js','bootstrap_js'), VERSION, true);
