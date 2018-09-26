@@ -34,6 +34,8 @@
   color:#fff;
   background: url(../images/bg-newsletter.png);
   background-size:cover;
+  position: relative;
+  z-index: 1;
 }
 
 .newsletter-field , .newsletter-btn{
@@ -127,6 +129,14 @@ form.newsletter-form {
     color:#6b6b6b;
     padding: 10px 0px 10px;
     font-size:1.5rem;
+}
+
+.map {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 117px;
+    z-index: 0;
 }
 
 .anchor{

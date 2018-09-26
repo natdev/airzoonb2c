@@ -94,7 +94,7 @@
       <div class="row">
         <div class="col-lg-5">
           <div class="map">
-
+            <img src="<?php echo get_template_directory_uri()."/images/smartphone.png" ?>" alt="">
           </div>
         </div>
         <div class="col-lg-7">
