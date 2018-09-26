@@ -207,8 +207,8 @@
 
   <footer>
     <div class="container">
+      <hr>
       <div class="row">
-        <hr>
         <div class="menu-footer">
           <span class="logo-footer">
             <a href=""><img src="<?php echo get_template_directory_uri()."/images/logo-airzoon.png" ?>" alt=""></a>
@@ -230,11 +230,11 @@
                 <li class="item-footer">
                   <a href="">Mentions légales</a>
                 </li>
-                <li class="item-footer social-footer">
-                  <a href=""><i class="fab fa-facebook"></i></a>
-                </li>
-                <li class="item-footer social-footer">
-                  <a href=""><i class="fab fa-twitter-square"></i></a>
+                <li class="item-footer">
+                  <span>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                  </span>
                 </li>
               </ul>
           </nav>
