@@ -19,13 +19,13 @@
                      <a href=""><i class="fas fa-phone fa-sm phone-menu-front"></i> 0596 00 00 00</a>
                    </li>
                    <li class="social-front">
-                     <a href=""><i class="fab fa-facebook"></i></a>
+                     <a href="https://www.facebook.com/airzoon"><i class="fab fa-facebook"></i></a>
                    </li>
                    <li class="social-front">
-                     <a href=""><i class="fab fa-twitter"></i></a>
+                     <a href="https://twitter.com/airzoonwifi"><i class="fab fa-twitter"></i></a>
                    </li>
                    <li class="social-front">
-                     <a href=""><i class="fab fa-instagram"></i></a>
+                     <a href="https://www.instagram.com/airzoon/"><i class="fab fa-instagram"></i></a>
                    </li>
                    <li class="social-front">
                      <a href="">l</a>
@@ -237,8 +237,8 @@
                 </li>
                 <li class="item-footer">
                   <span>
-                    <a href=""><i class="fab fa-facebook face-color"></i></a>
-                    <a href=""><i class="fab fa-twitter twit-color"></i></a>
+                    <a href="https://www.facebook.com/airzoon"><i class="fab fa-facebook face-color"></i></a>
+                    <a href="https://twitter.com/airzoonwifi"><i class="fab fa-twitter twit-color"></i></a>
                   </span>
                 </li>
               </ul>
