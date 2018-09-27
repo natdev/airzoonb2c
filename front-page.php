@@ -52,7 +52,7 @@
              <div id="offre" class="col-lg-7 col-md-12 mt-md-3 mt-2">
               <div class="container">
                 <div class="row">
-                  <div class="card-offre enable-offre col-lg-6 col-md-6 text-center">
+                  <div class="card-offre enable-offre col-lg-6 col-md-6 col-sm-6 col-12 text-center">
                     <h4 class="title">
                       <span class="d-block">airZoon No Limit</span>
                       ONE SHOT
@@ -61,11 +61,11 @@
                     <p class="description">
                       Coupon premium d'une durée de 3 semaine de surf illimité et sans intéruption
                     </p>
-                    <a class="btn btn-danger">
+                    <a class="btn btn-danger" href="https://secure.payplug.com/p/jFOl5">
                       Souscrire
                     </a>
                   </div>
-                  <div class="card-offre desable-offre col-lg-6 col-md-6 text-center">
+                  <div class="card-offre desable-offre col-lg-6 col-md-6 col-sm-6 col-12 text-center">
                     <h4 class="title">
                       <span class="d-block">airZoon No Limit</span>
                       Air
@@ -123,12 +123,17 @@
             Alors inscris toi à notre newsletter...c'est gratuit !
           </p>
         </div>
-        <div class="col-lg-6">
+        <?php if ( is_active_sidebar( 'airzoon_newsletter' ) ) : ?>
+
+          <?php dynamic_sidebar( 'airzoon_newsletter' ); ?>
+
+        <?php endif; ?>
+        <!--<div class="col-lg-6">
           <form class="newsletter-form" action="index.html" method="post">
             <input class="newsletter-field" type="text" name="" value="">
             <input class="newsletter-btn" type="button" name="" value="S'inscrire">
           </form>
-        </div>
+        </div>-->
       </div>
     </div>
   </section>
@@ -200,7 +205,7 @@
     <div class="container">
       <div class="row">
         <div class=" sloganIN col-lg-12 col-md-12 col-sm-12 col-12"><p>airZoon est amoureusement conçu en Martinique</p></div>
-        <div class="anchor col-lg-12 col-md-12 col-sm-12 col-12"><a href="#offer">Back to the top</a></div>
+        <div class="anchor-wrap col-lg-12 col-md-12 col-sm-12 col-12"><a class="anchor" href="#offer">Back to the top</a></div>
       </div>
     </div>
   </section>

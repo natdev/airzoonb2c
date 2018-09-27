@@ -23,6 +23,19 @@ function airzoon_files(){
 
 add_action('wp_enqueue_scripts','airzoon_files');
 
+/*widgets*/
+
+function airzoon_widgets(){
+  register_sidebar(array(
+  'name'            =>'Newsletter subcription',
+  'id'              =>'airzoon_newsletter',
+  'before_widget'  =>'<div class="col-lg-6">',
+  'after_widget'    =>'</div>'
+));
+}
+
+add_action('widgets_init', 'airzoon_widgets');
+
 
 
 

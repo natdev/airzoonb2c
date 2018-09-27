@@ -98,6 +98,14 @@ div.card-offre .btn{
 
 div.card-offre .btn:hover{color:#fff;}
 
+div.card-offre .btn {
+    background-color: #d70e21;
+}
+
+div.card-offre .btn:hover {
+    background-color: #c80d1f;
+}
+
 div.card-offre p.description {
     min-height: 72px;
 }

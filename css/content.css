@@ -28,6 +28,34 @@
   color:#3ba092;
 }
 
+/*
+
+.newsletter-field , .newsletter-btn{
+  border: 0px;
+  height: 50px;
+  float: left;
+}
+
+form.newsletter-form {
+    position: relative;
+    top: 50px;
+}
+
+.newsletter-field{
+   width: 230px;
+   height: 50px;
+   border-radius: 5px 0px 0px 5px;
+}
+
+.newsletter-btn{
+   width: 120px;
+   background: red;
+   color:#fff;
+   border-radius: 0px 5px 5px 0px;
+
+}*/
+/*Inscription à la newsletter*/
+
 .newsletter{
   padding-top: 100px;
   padding-bottom: 100px;
@@ -38,10 +66,42 @@
   z-index: 1;
 }
 
-.newsletter-field , .newsletter-btn{
-  border: 0px;
+form#mc_signup_form {
+    position: relative;
+    top: 50px;
+}
+
+input#mc_signup_submit, input#mc_mv_EMAIL {
+  border:0px;
+}
+
+.mc_merge_var {
+    float: left;
+}
+
+input#mc_mv_EMAIL {
+  width: 230px;
   height: 50px;
-  float: left;
+  border-radius: 5px 0px 0px 5px;
+}
+
+input#mc_signup_submit {
+  width: 120px;
+  height: 50px;
+  background: #d70e21;
+  color:#fff;
+  border-radius: 0px 5px 5px 0px;
+}
+
+li#mailchimpsf_widget-2 {
+    list-style: none;
+}
+
+label.mc_var_label.mc_header.mc_header_email {
+    display: none;
+}
+div#mc_display_rewards {
+    display: none;
 }
 
 .testimonials{
@@ -70,24 +130,7 @@ div#testimonialsControls p {
   color:#494748;
 }
 
-form.newsletter-form {
-    position: relative;
-    top: 50px;
-}
 
-.newsletter-field{
-   width: 230px;
-   height: 50px;
-   border-radius: 5px 0px 0px 5px;
-}
-
-.newsletter-btn{
-   width: 120px;
-   background: red;
-   color:#fff;
-   border-radius: 0px 5px 5px 0px;
-
-}
 
 .image{
   width:100%;
@@ -139,11 +182,11 @@ form.newsletter-form {
     z-index: 0;
 }
 
-.anchor{
+.anchor-wrap{
   text-align:right;
 }
 
-.anchor a{
+.anchor-wrap a{
   color:#4e948a;
 }
 
