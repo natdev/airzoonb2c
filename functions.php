@@ -3,7 +3,7 @@ define("VERSION","1.0");
 function airzoon_files(){
 
   wp_enqueue_script('jQuery_3.3.1','//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js',NULL, VERSION, true);
-
+  wp_enqueue_script('googlemap','//maps.googleapis.com/maps/api/js?key=AIzaSyCApplnb-01Izyp8_dT5BPgwzR0gXwg4Gs' , NULL, VERSION, true);
   wp_enqueue_script('slick_js',get_theme_file_uri('/js/slick.min.js'),array('jQuery_3.3.1'), VERSION, true);
   wp_enqueue_script('scrollTop_js',get_theme_file_uri('/js/scrollTop.js'),array('jQuery_3.3.1'), VERSION, true);
 
