@@ -202,6 +202,15 @@ div#testimonialsControls p {
   padding: 0px 5px;
 }
 
+.pubDesc .btn{
+  background-color: #d70e21;
+}
+
+.pubDesc .btn a{color:#fff;}
+
+.pubDesc .btn:hover{
+  background-color: #c80d1f;
+}
 
 /*carousel partenaires*/
 

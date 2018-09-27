@@ -106,7 +106,7 @@
                <li><span>Valable dans tous les hotspots airZoon WIFI en Guadeloupe, Martinique et Guyane</span></li>
                <li><span>Une appli mobile gratuite pour vous permettre de trouver tous les hotspots WIFI disponible où que vous soyez</span></li>
              </ul>
-          <span class="link-green"><a href="#">TOUTES LES FONCIONNALITES AIRZOON</a></span>
+          <span class="link-green"><a href="#">TOUTES LES FONCTIONNALITES AIRZOON</a></span>
           </div>
         </div>
       </div>
@@ -180,7 +180,7 @@
         <div><a href="#"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></a></div>
      </div>
      <div class="btn btn-success">
-       <a href="#">TOUS NOS PARTENAIRES</a>
+       <a href="http://airzoon.com/nos-partenaires/?lang=nos-partenaires">TOUS NOS PARTENAIRES</a>
      </div>
  </div>
  </div>
@@ -195,7 +195,7 @@
             tous les utilisateurs dans les hotspots airZoon en Guadeloupe, en Guyane et en Martinique ?
           </p>
           <span class="btn btn-danger">
-            RECEVOIR PLUS D'INFORMATIONS
+            <a href="http://informations.airzoon.com">RECEVOIR PLUS D'INFORMATIONS</a>
           </span>
         </div>
       </div>
