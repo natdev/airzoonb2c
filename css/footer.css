@@ -39,3 +39,15 @@ span.logo-footer img {
 span.logo-footer {
     text-align: center;
 }
+
+@media (max-width: 768px) {
+  .menu-footer, .menu-footerIN ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav.menu-footerIN ul li {
+    padding: 5px 0px 5px 0px;
+}
+
+}
