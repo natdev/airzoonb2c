@@ -94,7 +94,11 @@
       <div class="row">
         <div class="col-lg-5">
           <div class="map">
-            <img src="<?php echo get_template_directory_uri()."/images/smartphone.png" ?>" alt="">
+            <div class="map_wrap">
+              <div class="mapIN">
+                <div id="map_canvas"></div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-lg-7">
@@ -248,7 +252,173 @@
     </div>
   </footer>
 </main>
-
     <?php wp_footer(); ?>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCApplnb-01Izyp8_dT5BPgwzR0gXwg4Gs&sensor=false"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+		    /*###################################*/
+		    var mapCenter = new google.maps.LatLng(14.701403, -61.001142); //Google map Coordinates
+		    var map;
+		    var spotInfo = [];
+		    map_initialize(); // initialize google map
+
+		    //############### Google Map Initialize ##############
+		    function map_initialize() {
+		        var googleMapOptions = {
+		            // center: mapCenter, // map center
+    						center: {lat: 15.45, lng: -61.15},
+		            zoom: 8, //zoom level, 0 = earth view to higher value
+
+		            mapTypeId: google.maps.MapTypeId.ROADMAP // google map type
+		        };
+
+		        map = new google.maps.Map(document.getElementById("map_canvas"), googleMapOptions);
+
+		        //Load Markers from the XML File, Check (map_process.php)
+		        // $.get( "http://app.airzoon.com/wp-content/themes/airzoon-app/map/json.php", function( data ) {
+		        $.get( "//airzoonapp.com/json.php", function( data ) {
+		            var jsondata = jQuery.parseJSON(data);
+		            $.each(jsondata, function(idx, obj) {
+		                //alert(obj.zip);
+		                var name = obj.name;
+		                var address_data = obj.address + ',' + obj.address2 + ',' + obj.zip + ',' + obj.city + ',' + obj.country;
+		                address_data = address_data.replace(/,undefined/g, "");
+		                //address_data=address_data.replace(/undefined/g,"");
+		                //alert(address_data);
+		                var address = '<p>' + address_data + '<br/>Speed:' + obj.speed + 'Mbps</p>';
+		                var type = obj.type;
+		                var point = new google.maps.LatLng(parseFloat(obj.lat), parseFloat(obj.lng));
+		                // if(type == 'airzone')
+		                var icon;
+		                /* if(type == 'paid')
+							  {
+								 icon = "http://airzoonapp.com/iconsmap/paidmarkerfinal.png";
+							  }*/
+		                //if(type == 'airzone')
+		                //{
+		                icon = "http://app.airzoon.com/wp-content/themes/airzoon-app/img/marker.png";
+		                //}
+		                /*if(type == 'free')
+		                  {
+		                	 icon = "http://airzoonapp.com/iconsmap/freemarkerfinal.png";
+		                }*/
+
+		                create_marker(point, name, address, false, false, false, icon);
+		            });
+		        });
+
+		        //Right Click to Drop a New Marker
+		        google.maps.event.addListener(map, 'rightclick', function(event) {
+		            //Edit form to be displayed with new marker
+
+		            //Drop a new Marker with our Edit Form
+		            //create_marker(event.latLng, 'New Marker', EditForm, true, true, true, "http://localhost/google_map_new/iconsmap/pin_green.png");
+		        });
+
+		    }
+
+		    //############### Create Marker Function ##############
+		    function create_marker(MapPos, MapTitle, MapDesc, InfoOpenDefault, DragAble, Removable, iconPath) {
+
+		        //new marker
+		        var marker = new google.maps.Marker({
+		            position: MapPos,
+		            map: map,
+		            draggable: DragAble,
+		            animation: google.maps.Animation.DROP,
+		            //title:"Hello World!",
+		            icon: iconPath,
+		            name: MapTitle,
+		            descp: MapDesc
+		        });
+
+		        //Content structure of info Window for the Markers
+		        var contentString = $('<div><span class="info-content">' +
+		            '<h1 class="marker-heading">' + MapTitle + '</h1>' +
+		            MapDesc +
+		            '</span></div>');
+
+
+		        //Create an infoWindow
+		        var infowindow = new google.maps.InfoWindow();
+		        //set the content of infoWindow
+		        infowindow.setContent(contentString[0]);
+
+
+		        //add click listner to save marker button
+		        google.maps.event.addListener(marker, 'click', function() {
+		            //infowindow.open(map,marker); // click on marker opens info window
+		            console.log(marker.name)
+		            document.getElementById('spotName').innerHTML = (marker.name);
+		            document.getElementById('spotAddress').innerHTML = (marker.descp);
+		        });
+
+		        if (InfoOpenDefault) //whether info window should be open by default
+		        {
+		            infowindow.open(map, marker);
+		        }
+		    }
+
+		    //############### Remove Marker Function ##############
+		    function remove_marker(Marker) {
+
+		        /* determine whether marker is draggable
+		        new markers are draggable and saved markers are fixed */
+		        if (Marker.getDraggable()) {
+		            Marker.setMap(null); //just remove new marker
+		        } else {
+		            //Remove saved marker from DB and map using jQuery Ajax
+		            var mLatLang = Marker.getPosition().toUrlValue(); //get marker position
+		            var myData = {
+		                del: 'true',
+		                latlang: mLatLang
+		            }; //post variables
+		            $.ajax({
+		                type: "POST",
+		                url: "map_process.php",
+		                data: myData,
+		                success: function(data) {
+		                    Marker.setMap(null);
+		                    alert(data);
+		                },
+		                error: function(xhr, ajaxOptions, thrownError) {
+		                    alert(thrownError); //throw any errors
+		                }
+		            });
+		        }
+
+		    }
+
+		    //############### Save Marker Function ##############
+		    function save_marker(Marker, mName, mAddress, mType, replaceWin) {
+		        //Save new marker using jQuery Ajax
+		        var mLatLang = Marker.getPosition().toUrlValue(); //get marker position
+		        var myData = {
+		            name: mName,
+		            address: mAddress,
+		            latlang: mLatLang,
+		            type: mType
+		        }; //post variables
+		        console.log(replaceWin);
+		        $.ajax({
+		            type: "POST",
+		            url: "map_process.php",
+		            data: myData,
+		            success: function(data) {
+		                replaceWin.html(data); //replace info window with new html
+		                Marker.setDraggable(false); //set marker to fixed
+		                Marker.setIcon('http://----PATH-TO-YOUR-WEBSITE-ICON-------/icons/pin_blue.png'); //replace icon
+		            },
+		            error: function(xhr, ajaxOptions, thrownError) {
+		                alert(thrownError); //throw any errors
+		            }
+		        });
+		    }
+
+		});
+	</script>
+
+
 </body>
 </html>
