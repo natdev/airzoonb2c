@@ -216,7 +216,7 @@ div#testimonialsControls p {
 
 @media (max-width: 576px) {
 
-  .newsletter-field {
+  input#mc_mv_EMAIL {
       width: 208px;}
 
       .section-title {
