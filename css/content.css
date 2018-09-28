@@ -138,6 +138,13 @@ div#testimonialsControls p {
   background-color: #000;
 }
 
+.slick-slide {
+    display:flex !important;
+    align-items: center;
+    height: 159px;
+}
+
+
 .partenaires {
     text-align: center;
 }

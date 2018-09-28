@@ -3,6 +3,25 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
   <?php wp_head(); ?>
+  <!-- Tags Open Graph -->
+		<meta property="og:site_name" content="airZoon | The perfect spot.">
+		<meta property="og:title" content="airZoon : Hotspot Wifi gratuit">
+		<meta property="og:description" content="airZoon offre un accès internet gratuit, stable, illimité et sécurisé pour les touristes et les nomades martiniquais grâce aux réseaux wifi de partenaires.">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://www.airzoon.com">
+		<meta property="og:image" content="http://www.airzoon.com/landing/content/img/logo-airzoon.png">
+		<meta property="og:image:type" content="image/png">
+		<meta property="og:image:width" content="330">
+		<meta property="og:image:height" content="391">
+		<meta property="fb:page-id" content="177770159052491">
+
+		<!-- Twitter Cards -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@airZoonWifi">
+		<meta name="twitter:creator" content="@airZoonWifi">
+		<meta name="twitter:title" content="airZoon : Hotspot Wifi gratuit">
+		<meta name="twitter:description" content="airZoon offre un accès internet gratuit, stable, illimité et sécurisé pour les touristes et les nomades martiniquais grâce aux réseaux wifi de partenaires.">
+		<meta name="twitter:image:src" content="http://www.airzoon.com/landing/content/img/logo-airzoon.png">
 <title>Document</title>
 </head>
 <body>
@@ -173,15 +192,36 @@
       <div class="row">
         <div class="col-lg-12 col-12">
           <h2 class="section-title text-center">Rejoins un hotspots partenaire</h2>
-          <div class="responsive" data-slick='{"slidesToShow": 6, "slidesToScroll": 1, "arrows":true, "dots":true, "infinite":true, "autoplay":true}'>
-        <div><a href="#"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></a></div>
-        <div><a href="#"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></a></div>
-        <div><a href="#"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></a></div>
-        <div><a href="#"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></a></div>
-        <div><a href="#"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></a></div>
-        <div><a href="#"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></a></div>
-        <div><a href="#"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></a></div>
-        <div><a href="#"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></a></div>
+          <div class="responsive" data-slick='{"slidesToShow": 6, "slidesToScroll": 4, "arrows":true, "dots":true, "infinite":true, "autoplay":true }'>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-auberge-anse-mitan.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-babaorum.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-cour-perrinon.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-cyberbase-3ilets.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-fullmoonmartinique.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-hasta-la-pizza.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-hiwear.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-initiativemartinique.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-karissima.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-kayali.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-le-black-pearl.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-lilis.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-marieline-coiffure.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-vigets.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-villa-factory.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-atoumo-lounge.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-baguet-shop.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-barber-city.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-do-it-for-me.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-garage-popular.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-la-villa-oasis.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-la-yole-bleue.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-le-bambou.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-le-baroc.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-le-petibonum.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-linas.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-office-de-tourisme.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-paul-martinique.jpg" ?>"></div>
+        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-the-yellow.jpg" ?>"></div>
      </div>
      <div class="btn btn-success">
        <a href="http://airzoon.com/nos-partenaires/?lang=nos-partenaires">TOUS NOS PARTENAIRES</a>
@@ -253,6 +293,7 @@
   </footer>
 </main>
     <?php wp_footer(); ?>
+    <script src="//my.hellobar.com/7aa00969ea5c0470c61d7d7ab9ed9e6eedacd668.js" type="text/javascript" charset="utf-8" async="async"></script>
     <script type="text/javascript">
       $(document).ready(function() {
 
@@ -417,6 +458,15 @@
 
       });
     </script>
+    <!--Start of Zopim Live Chat Script-->
+    		<script type="text/javascript">
+    		window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    		d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    		_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+    		$.src='//v2.zopim.com/?1kToJmh24geKb1QtoW1wu0r6AhSPeEdH';z.t=+new Date;$.
+    		type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+    		</script><!--End of Zopim Live Chat Script-->
+
 
 
 </body>
