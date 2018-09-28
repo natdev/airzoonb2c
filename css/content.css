@@ -250,9 +250,21 @@ div#map_canvas {
 }
 
 @media (max-width: 767px) {
+
+  span.logo {
+      position: relative;
+      top: 30px;
+  }
+
+  .anchor-wrap {
+    text-align: center;
+}
+
 .map {
     margin-bottom: 30px;
-}
+    top: 65px;
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -262,5 +274,30 @@ div#map_canvas {
 
       .section-title {
           font-size: 2rem;}
+
+}
+
+@media (max-width: 320px) {
+  .mapIN {
+      width: 224px;
+      height: 392px;
+      top: 65px;
+}
+
+.map_wrap {
+    width: 280px;
+    background-size: 100%;
+}
+
+input#mc_mv_EMAIL {
+    width: 182px;
+}
+
+input#mc_signup_submit {
+    width: 107px;}
+
+    .arg-list {
+    padding: 10px 0px;
+}
 
 }
