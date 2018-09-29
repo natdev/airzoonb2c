@@ -46,8 +46,25 @@
                    <li class="social-front">
                      <a href="https://www.instagram.com/airzoon/"><i class="fab fa-instagram"></i></a>
                    </li>
-                   <li class="social-front">
-                     <a href="">l</a>
+                   <li class="social-front dropdown">
+                     <?php
+if(pll_current_language() == "fr"){
+  $lang = "/";
+
+}
+elseif(pll_current_language() == "en"){
+  $lang = "en";
+}
+elseif(pll_current_language() == "es"){
+  $lang = "es";
+}
+
+     ?>
+                     <a class="dropdown-toggle drop_header" data-toggle="dropdown" href="<?php echo site_url().$lang?>"><?php if($lang == "/"){echo "FR";}else{echo $lang;}?></a>
+                     <ul class="dropdown-menu drop-lang-menu">
+                       <li><a class="dropdown-item" href="<?php echo site_url().'/' ?>">FR</a></li>
+                       <li><a class="dropdown-item" href="<?php echo site_url().'/en' ?>">EN</a></li>
+                     </ul>
                    </li>
                  </ul>
              </nav>
@@ -124,10 +141,10 @@
           <div class="arg-list">
             <h2 class="section-title">Pourquoi utiliser airZoon ?</h2>
              <ul>
+               <li><span><a href="http://app.airzoon.com/">Une appli mobile gratuite </a>pour vous permettre de trouver tous les hotspots WIFI disponible où que vous soyez</span></li>
                <li><span>Un code premium pour se connecter 4x plus rapidement</span></li>
                <li><span>Un surf illimité sans aucune intérruption</span></li>
                <li><span>Valable dans tous les hotspots airZoon WIFI en Guadeloupe, Martinique et Guyane</span></li>
-               <li><span>Une appli mobile gratuite pour vous permettre de trouver tous les hotspots WIFI disponible où que vous soyez</span></li>
              </ul>
           <span class="link-green"><a href="#">TOUTES LES FONCTIONNALITES AIRZOON</a></span>
           </div>
@@ -192,7 +209,7 @@
       <div class="row">
         <div class="col-lg-12 col-12">
           <h2 class="section-title text-center">Rejoins un hotspots partenaire</h2>
-          <div class="responsive" data-slick='{"slidesToShow": 6, "slidesToScroll": 4, "arrows":true, "dots":true, "infinite":true, "autoplay":true }'>
+          <div class="responsive" data-slick='{"slidesToShow": 6, "slidesToScroll": 1, "arrows":true, "dots":true, "infinite":true, "autoplay":true }'>
         <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-auberge-anse-mitan.jpg" ?>"></div>
         <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-babaorum.jpg" ?>"></div>
         <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-cour-perrinon.jpg" ?>"></div>
@@ -201,27 +218,6 @@
         <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-hasta-la-pizza.jpg" ?>"></div>
         <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-hiwear.jpg" ?>"></div>
         <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-initiativemartinique.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-karissima.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-kayali.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-le-black-pearl.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-lilis.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-marieline-coiffure.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-vigets.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-villa-factory.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-atoumo-lounge.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-baguet-shop.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-barber-city.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-do-it-for-me.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-garage-popular.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-la-villa-oasis.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-la-yole-bleue.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-le-bambou.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-le-baroc.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-le-petibonum.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-linas.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-office-de-tourisme.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-paul-martinique.jpg" ?>"></div>
-        <div><img src="<?php echo get_template_directory_uri()."/images/logos-partenaires/logo-partenaire-the-yellow.jpg" ?>"></div>
      </div>
      <div class="btn btn-success">
        <a href="http://airzoon.com/nos-partenaires/?lang=nos-partenaires">TOUS NOS PARTENAIRES</a>
@@ -293,7 +289,7 @@
   </footer>
 </main>
     <?php wp_footer(); ?>
-    <script src="//my.hellobar.com/7aa00969ea5c0470c61d7d7ab9ed9e6eedacd668.js" type="text/javascript" charset="utf-8" async="async"></script>
+    <script src="https://my.hellobar.com/7aa00969ea5c0470c61d7d7ab9ed9e6eedacd668.js" type="text/javascript" charset="utf-8" async="async"></script>
     <script type="text/javascript">
       $(document).ready(function() {
 
@@ -467,7 +463,11 @@
     		type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
     		</script><!--End of Zopim Live Chat Script-->
 
-
+        <script type="text/javascript">
+        $( "select#lang_choice_1 option" ).each(function( index ) {
+ $( this ).text($( this ).text().substring(0,2));
+});
+        </script>
 
 </body>
 </html>

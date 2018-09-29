@@ -26,6 +26,29 @@ span.logo{
   color:#fff;
 }
 
+select#lang_choice_1 {
+    background: transparent;
+    color: #fff;
+    border: 0;
+    text-transform: uppercase;
+}
+
+select#lang_choice_1 option {
+    background-color: rgba(215, 14, 33, 0.74);
+
+}
+
+.drop_header{text-transform: uppercase;}
+ul.drop-lang-menu {
+    background-color: transparent;
+    min-width: 14px;
+    border: 0px;
+}
+
+
+    .drop-lang-menu li {display: block!important; background-color: transparent !important;}
+
+select#lang_choice_1 option:hover {background-color: rgba(0, 0, 0);}
 .social-front{
   margin: 0px 15px 0px 15px;
 }
@@ -158,7 +181,7 @@ div.perfect-desc h1 {
     width: 100%;
   }
 
-  .social-front{
-    margin: 0px 12px 0px 12px;
-  }
+  .social-front {
+    margin: 0px 9px 0px 9px;
+}
 }

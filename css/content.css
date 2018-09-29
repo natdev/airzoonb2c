@@ -20,6 +20,11 @@
     bottom: 7px;
 }
 
+.arg-list ul li span a {
+    color: #454545;
+    text-decoration: underline;
+  }
+
 .arg-list ul li{
   padding: 15px;
 }
@@ -142,7 +147,10 @@ div#testimonialsControls p {
     display:flex !important;
     align-items: center;
     height: 159px;
+    justify-content: center;
 }
+
+
 
 
 .partenaires {
